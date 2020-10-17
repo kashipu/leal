@@ -15,6 +15,7 @@ body {
     background-image: url("/1x/fondo.png");
     background-color: black;
     font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
 }
 
 .container {
@@ -89,6 +90,11 @@ body {
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.button-style a {
+    text-decoration: none;
+    color: #000;
+}
+
 .gap-separador {
     margin-top: 5rem;
 }
@@ -100,6 +106,7 @@ body {
     font-weight: 700;
     font-size: 1.5rem;
     padding: .5rem 2rem;
+    text-decoration: none;
 }
 
 
@@ -132,6 +139,10 @@ body {
 
 .card-body {
     padding: 2rem;
+}
+
+.card-title {
+    color: #FFCB05;
 }
 
 .card-item {
@@ -196,3 +207,17 @@ body {
     list-style: none;
     padding: .3rem 0rem;
 }
+
+@media (max-width: 600px) {
+    .nav {
+        justify-content: center;
+    }
+
+    .header--menu {
+        display: none;
+    }
+
+    .footer--contenedor {
+        flex-direction: column;
+    }
+    }
