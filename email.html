@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+    
+    <style type="text/css">
         body {
+            margin: 0;
             box-sizing: border-box;
-            background-color: #000000;
             color: #FFFFFF;
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: url("/1x/fondo.png");
+            font-family: 'Raleway', sans-serif;
+            -ms-text-size-adjust: 100%;
         }
 
         .bfix {
@@ -19,21 +20,38 @@
         }
 
         .container {
-            max-width: 600px;
+            max-width: 600px !important; 
             margin: 0 auto;
+            background-color: #000000;
+            background-image: url("https://leal.now.sh/1x/fondo.png");
         }
 
-        table {
-            margin: 0 auto;
-            text-align: center;
+        .tablebox {
+            padding: 60px;
         }
 
         table,
         tr,
         td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
             padding: 0;
             margin: 0;
             vertical-align: center;
+        }
+
+        table {
+            text-align: center;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+
+
+        img {
+            width: 100%;
+            min-width: 50%;
+            -ms-interpolation-mode: bicubic;
         }
 
         .img-header {
@@ -51,12 +69,7 @@
             margin: 0px;
         }
 
-        table {
-            padding: 50px;
-            border-collapse: collapse;
-            margin: 0 auto;
-            width: 80%;
-        }
+
 
         .text-intro p strong {
             color: #00ce13;
@@ -66,6 +79,11 @@
             text-align: center;
             width: 10px;
             padding: 15px 0px;
+        }
+
+        .logobox img {
+            width: 100%;
+            min-width: 120px;
         }
 
         .textbox {
@@ -79,13 +97,43 @@
             font-weight: bold;
         }
 
+        .buttonbox {
+            padding: 30px;
+        }
+
+        .button {
+            background: #ffcb05;
+            width: 250px;
+            margin: 0 auto;
+            font-family: sans-serif;
+            text-decoration: none;
+            padding: 5px 15px;
+            color: #000000;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 4px;
+        }
+
+        .tiendasbox {
+            padding: 60px;
+        }
+
+        .tiendas img {
+            max-width: 350px;
+
+        }
+
+        .footerbox {
+            background-color: #3d3d3d;
+        }
+
         .footer {
-            margin-top: 30px;
-            padding: 10px 20px;
+            padding: 20px 60px;
             color: #9e9e9e;
             text-align: center;
             background-color: #3d3d3d;
         }
+
         .footer-container {
             max-width: 600px;
             margin: 0 auto;
@@ -93,83 +141,87 @@
     </style>
 </head>
 
-<body>
+<body width="100%" class="fallback-font" style="margin:0; padding:0 !important; mso-line-height-rule:exactly;">
     <div class="container">
-        <table>
-            <tr>
-                <div class="img-header">
+        <div class="tablebox">
+            <table role="presentation" cellspacing="0" cellpadding="0">
+                <tr>
                     <td colspan="2"><img class="img-header" src="/1x/logocampana.png" alt=""></td>
-                </div>
-            </tr>
-            <tr>
-                <td colspan="2" class="text-intro">
-                    <p>Uber eats esta en Leal y ahora puedes llevarte el 4.9% de <strong>CA$HBACK</strong> en cada
-                        pedido si pasas
-                        primero por la app Leal </p>
-                </td>
-            </tr>
-            <tr>
-                <td class="logobox">
-                    <img src="/1x/lealemail.png" alt="">
-                </td>
-                <td class="textbox">
-                    <h4>1. Ingresa a Leal</h4>
-                    <p>Desde la pestaña Leal Coins podrás seleccionar Uber Eats cashback esto te llevará a su aplicación
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td class="logobox">
-                    <img src="/1x/uberemail.png" alt="">
-                </td>
-                <td class="textbox">
-                    <h4>2. Haz tu pedido</h4>
-                    <p>Selecciona tus productos y realiza el pedido asegurandote primero que vienes de la app Leal</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="logobox">
-                    <img src="/1x/coinemail.png" alt="">
-                </td>
-                <td class="textbox">
-                    <h4>3. Recibe 4.9% de ca$hback</h4>
-                    <p>Ya tienes tu CASHBACK, Si tu compra es de $100.000 recibiras 4.900 Leal Coins</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="textbox" colspan="2">
-                    <h4>¿Quieres conocer más marcas participantes?</h4>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <div class="button">
-                        <p>¡Encuéntralas aquí!</p>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <h4>¿Aún no tienes la app Leal? Descárgala en tu celular.</h4>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <img src="/1x/tiendas.png" alt="" srcset="">
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="footer">
-        <div class="footer-container">
+                </tr>
+                <tr>
+                    <td colspan="2" class="text-intro">
+                        <p>Uber eats esta en Leal y ahora puedes llevarte el 4.9% de <strong>CA$HBACK</strong> en cada
+                            pedido si pasas
+                            primero por la app Leal </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="logobox">
+                        <img src="/1x/lealemail.png" alt="">
+                    </td>
+                    <td class="textbox">
+                        <h4>1. Ingresa a Leal</h4>
+                        <p>Desde la pestaña Leal Coins podrás seleccionar Uber Eats cashback esto te llevará a su
+                            aplicación
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="logobox">
+                        <img src="/1x/uberemail.png" alt="">
+                    </td>
+                    <td class="textbox">
+                        <h4>2. Haz tu pedido</h4>
+                        <p>Selecciona tus productos y realiza el pedido asegurandote primero que vienes de la app Leal
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="logobox">
+                        <img src="/1x/coinemail.png" alt="">
+                    </td>
+                    <td class="textbox">
+                        <h4>3. Recibe 4.9% de ca$hback</h4>
+                        <p>Ya tienes tu CASHBACK, Si tu compra es de $100.000 recibiras 4.900 Leal Coins</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textbox" colspan="2">
+                        <h4>¿Quieres conocer más marcas participantes?</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="buttonbox" colspan="2">
+                        <div class="button">
+                            <a target="_blank" href="http://leal.co">
+                                <p>¡Encuéntralas aquí!</p>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h4>¿Aún no tienes la app Leal? Descárgala en tu celular.</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tiendasbox" colspan="2">
+                        <img src="/1x/tiendas.png" alt="" srcset="">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
             <p>Comunícate a nuestras lineas de atención:</p>
             <p>Colombia: <br>
                 usuarios@leal.co</p>
             <p>Bogotá 7464520 Nacional: 3502118702</p>
-            <p>Recibiste este correo porque estás suscrito a nuestra base de datos. Este es un mensaje informativo, por
+            <p>Recibiste este correo porque estás suscrito a nuestra base de datos. Este es un mensaje
+                informativo, por
                 favor no respondas. Puedes consultar nuestras políticas de privacidad aquí.</p>
         </div>
     </div>
+
 </body>
 
 </html>
